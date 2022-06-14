@@ -33,13 +33,19 @@
         <div class="spacer-tall"></div>
         <div class="columns">
             <div class="column">
-                <h1 class="subtitle animate__animated animate__backInLeft has-text-grey-light huge italic">Hi, I'm</h1>
-                <h1 class="title animate__animated animate__backInLeft has-text-primary-light massive">Sushi</h1>
+                <h1 class="title huge animate__animated animate__backInLeft has-text-grey-light">I'm a</h1>
+                <div class="ml-6">
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ high schooler</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ mediocre web developer</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ guy who plays games</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ failed artist</h1>
+                </div>
+                <div class="spacer-tall"></div>
                 <div class="columns animate__animated animate__backInUp">
                     <div class="column text-center">
                         <h1 class="subtitle has-text-grey-light">Pages</h1>
-                        <button onclick="window.location.href=`/about`" class="button is-light is-large shadow wider">
-                            <b>About</b>
+                        <button onclick="window.location.href=`/`" class="button is-light is-large shadow wider">
+                            <b>Home</b>
                         </button>
                         <button onclick="window.location.href=`/projects`" class="button is-light is-large shadow wider">
                             <b>Projects</b>
@@ -54,8 +60,11 @@
                 </div>
             </div>
             <div class="column">
-                <figure class="image is-square animate__animated animate__backInRight">
-                    <img class="is-rounded shadow" src="/static/logo.jpg" alt="SushiPython Logo">
+                <figure class="image animate__animated animate__backInRight">
+                    <img class="shadow" src="https://github-readme-stats.vercel.app/api?username=SushiPython&show_icons=true&theme=radical" alt="SushiPython Logo">
+                </figure>
+                <figure class="image animate__animated animate__backInRight">
+                    <img class="shadow" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SushiPython&show_icons=true&theme=radical&langs_count=3&hide=css" alt="SushiPython Logo">
                 </figure>
             </div>
         </div>
@@ -63,6 +72,9 @@
 </body>
 </html>
 <style>
+    img {
+        margin: 1em;
+    }
     .cursor {
         position: fixed;
         border-radius: 50%;
@@ -80,7 +92,7 @@
 
     figure {
         position: relative;
-        top: -2em;
+        top: 1em;
         left: 5em;
     }
     html {
@@ -99,7 +111,7 @@
         font-style: italic;
     }
     .spacer-tall {
-        height: 10rem;
+        height: 5rem;
     }
     .shadow {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
