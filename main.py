@@ -16,7 +16,7 @@ def about():
 def projects():
     # open projects.json and read
     with open('projects.json', encoding="utf-8") as projects_file:
-        return render_template('projects.html', projects=projects_file)
+        return render_template('projects.html', projects=json.load(projects_file))
     
 
 app.run(host='0.0.0.0', port=8080)

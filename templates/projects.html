@@ -33,10 +33,17 @@
         <div class="spacer-tall"></div>
         <div class="columns">
             <div class="column">
-                <h1 class="title huge animate__animated animate__backInLeft has-text-grey-light">Projects</h1>
-                <div class="ml-6">
+                <h1 class="title huge animate__animated animate__slideInLeft has-text-grey-light">Projects</h1>
+                <div id="projects" class="ml-6" scrollable>
+                    <span class="title is-4 has-text-grey m-1 mb-5 animate__animated animate__backInLeft">*All projects are clickable, but some may not work anymore due to external API or codebase changes</span>
+                    <br><br>
                     {% for project in projects %}
-                        <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">{{project}}</h1>
+                    <section onclick="window.open('{{ project.url }}')" class="project animate__animated animate__backInLeft">
+                        <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">{{project.title}}</h1>
+                        <h3 class="title is-3 animate__animated animate__backInLeft has-text-grey-light">{{project.desc}}</h1>
+                    </section>
+                    <br>
+                    <br>
                     {% endfor %}
                 </div>
                 <div class="spacer-tall"></div>
@@ -46,8 +53,8 @@
                         <button onclick="window.location.href=`/`" class="button is-light is-large shadow wider">
                             <b>Home</b>
                         </button>
-                        <button onclick="window.location.href=`/projects`" class="button is-light is-large shadow wider">
-                            <b>Projects</b>
+                        <button onclick="window.location.href=`/about`" class="button is-light is-large shadow wider">
+                            <b>About</b>
                         </button>
                     </div>
                     <div class="column text-center">
@@ -71,6 +78,10 @@
 </body>
 </html>
 <style>
+    #projects {
+        height: 40vh;
+        overflow-y: scroll;
+    }
     img {
         margin: 1em;
     }
@@ -125,11 +136,12 @@
 
     /* Chrome, Edge, and Safari */
     *::-webkit-scrollbar {
-        width: 0px;
+        width: 16px;
     }
 
     *::-webkit-scrollbar-track {
-        background: hsl(0, 0%, 21%);
+        background: gray;
+        border-radius: 10px;
     }
 
     *::-webkit-scrollbar-thumb {
@@ -192,11 +204,18 @@
 
     }
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-}
+    @keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+    }
+
+    ::selection {
+    background: gray; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+    background: gray; /* Gecko Browsers */
+    }
 
     
 </style>

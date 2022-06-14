@@ -181,12 +181,18 @@
 
     }
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-}
+    @keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+    }
 
+    ::selection {
+        background: gray; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+        background: gray; /* Gecko Browsers */
+    }
     
 </style>
 <script>

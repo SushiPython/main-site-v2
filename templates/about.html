@@ -37,8 +37,8 @@
                 <div class="ml-6">
                     <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ high schooler</h1>
                     <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ mediocre web developer</h1>
-                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ guy who plays games</h1>
-                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ failed artist</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ music enthusiast</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ photographer</h1>
                 </div>
                 <div class="spacer-tall"></div>
                 <div class="columns animate__animated animate__backInUp">
@@ -193,12 +193,18 @@
 
     }
 
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-}
+    @keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+    }
 
+    ::selection {
+        background: gray; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+        background: gray; /* Gecko Browsers */
+    }
     
 </style>
 <script>
