@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>SushiPython.US</title>
+</head>
+<body>
+    <div class='cursor' id="cursor"></div>
+    <div id="modal" class="modal">
+        <div style="border-radius: 3px" class="modal-card shadow">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Discord Tag</p>
+            <button onclick="document.getElementById('modal').classList.remove('is-active')" class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <h1 class="subtitle has-text-dark huge">Sushi#5027</h1>
+          </section>
+          <footer class="modal-card-foot">
+            <button onclick="document.getElementById('modal').classList.remove('is-active')" class="button is-success">Close</button>
+          </footer>
+        </div>
+      </div>
+    <div class="container">
+        <div class="spacer-tall"></div>
+        <div class="columns">
+            <div class="column">
+                <h1 class="title huge animate__animated animate__backInLeft has-text-grey-light">Projects</h1>
+                <div class="ml-6">
+                    {% for project in projects %}
+                        <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">{{project}}</h1>
+                    {% endfor %}
+                </div>
+                <div class="spacer-tall"></div>
+                <div class="columns animate__animated animate__backInUp">
+                    <div class="column text-center">
+                        <h1 class="subtitle has-text-grey-light">Pages</h1>
+                        <button onclick="window.location.href=`/`" class="button is-light is-large shadow wider">
+                            <b>Home</b>
+                        </button>
+                        <button onclick="window.location.href=`/projects`" class="button is-light is-large shadow wider">
+                            <b>Projects</b>
+                        </button>
+                    </div>
+                    <div class="column text-center">
+                        <h1 class="subtitle has-text-grey-light">Socials</h1>
+                        <button onclick="window.open(`https://github.com/SushiPython`)" class="button is-light is-large shadow bigger"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"></button>
+                        <button onclick="document.getElementById('modal').classList.add('is-active')" class="button is-light is-large shadow bigger"><img src="https://seeklogo.com/images/D/discord-black-logo-733DD6B9B0-seeklogo.com.png"></button>
+                        <button onclick="window.open(`https://www.youtube.com/channel/UCihmL67KFdeO6X3aoqpzuIw/videos?view=0&sort=p&flow=grid`)" class="button is-light is-large shadow bigger"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/YouTube_social_dark_circle_%282017%29.svg/300px-YouTube_social_dark_circle_%282017%29.svg.png"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <figure class="image animate__animated animate__backInRight">
+                    <img class="shadow" src="https://github-readme-stats.vercel.app/api?username=SushiPython&show_icons=true&theme=radical" alt="SushiPython Logo">
+                </figure>
+                <figure class="image animate__animated animate__backInRight">
+                    <img class="shadow" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SushiPython&show_icons=true&theme=radical&langs_count=3&hide=css" alt="SushiPython Logo">
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    img {
+        margin: 1em;
+    }
+    .cursor {
+        position: fixed;
+        border-radius: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        pointer-events: none;
+        left: -100px;
+        top: 50%;
+        mix-blend-mode: difference;
+        background-color: white;
+        z-index: 10000;
+        border: 2px solid white;
+        height: 30px;
+        width: 30px;
+    }
+
+    figure {
+        position: relative;
+        top: 1em;
+        left: 5em;
+    }
+    html {
+        background-color: hsl(0, 0%, 21%);
+    }
+    h1 {
+        font-family: 'Rubik', sans-serif;
+    }
+    .massive {
+        font-size: 15rem;
+    }
+    .huge {
+        font-size: 10rem;
+    }
+    .italic {
+        font-style: italic;
+    }
+    .spacer-tall {
+        height: 5rem;
+    }
+    .shadow {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+        scrollbar-width: 0px;
+        scrollbar-color: #ffffff #000000;
+        cursor: none;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: hsl(0, 0%, 21%);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 0px solid #ffffff;
+    }
+    button.bigger {
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        cursor: none;
+    }
+    button.wider {
+        width: auto;
+        height: 5rem;
+        padding: 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        cursor: none;
+    }
+    .text-center {
+        text-align: center;
+    }
+
+
+
+    /* rainbow hover animation for .button class */
+    .button:hover {
+        animation: rainbow 3s infinite;
+    }
+    /* rainbow animation */
+    @keyframes rainbow {
+        0% {
+            background-color: red;
+        }
+        17% {
+            background-color: orange;
+        }
+        34% {
+            background-color: yellow;
+        }
+        51% {
+            background-color: lime;
+        }
+        68% {
+            background-color: lightskyblue;
+        }
+        85% {
+            background-color: violet;
+        }
+        95% {
+            background-color: mediumorchid;
+        }
+        100% {
+            background-color: red;
+        }
+
+    }
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+    
+</style>
+<script>
+    var cursor = document.getElementById("cursor");
+    document.body.addEventListener("mousemove", function(e) {
+        cursor.style.left = e.clientX + "px",
+        cursor.style.top = e.clientY + "px";
+    });
+</script>
