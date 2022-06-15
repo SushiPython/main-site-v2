@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column disappear">
                 <figure class="image animate__animated animate__backInRight">
                     <img class="shadow" src="https://github-readme-stats.vercel.app/api?username=SushiPython&show_icons=true&theme=radical" alt="SushiPython Logo">
                 </figure>
@@ -205,9 +205,41 @@
     ::-moz-selection {
         background: gray; /* Gecko Browsers */
     }
-    
+    /* if screen is less than 950 pixels wide, make the font size smaller */
+    @media screen and (max-width: 950px) {
+        .title {
+            font-size: 3rem !important;
+            margin-left: 3rem;
+        }
+        .subtitle {
+            font-size: 1.2rem !important;
+        }
+        .disappear {
+            display: none !important;
+        }
+        .is-4 {
+            font-size: 1.5rem !important;
+        }
+        .is-1 {
+            font-size: 2rem !important;
+        }
+        .is-3 {
+            font-size: 1.5rem !important;
+        }
+        section {
+            left: -8rem !important;
+        }
+    }
 </style>
 <script>
+    const isTouchDevice = () => {  
+    return (('ontouchstart' in window) ||  
+        (navigator.maxTouchPoints > 0) ||  
+        (navigator.msMaxTouchPoints > 0));  
+    } 
+    if (isTouchDevice()) {
+        document.getElementById("cursor").style.display = "none";
+    }
     var cursor = document.getElementById("cursor");
     document.body.addEventListener("mousemove", function(e) {
         cursor.style.left = e.clientX + "px",

@@ -89,11 +89,30 @@
     h1 {
         font-family: 'Rubik', sans-serif;
     }
-    .massive {
-        font-size: 15rem;
+    @media (max-width: 1300px) {
+        .massive {
+            font-size: 6em;
+            text-align: center;
+
+        }
+        .huge {
+            font-size: 5em;
+            text-align: center;
+        }
+        figure {
+            display: none !important;
+        }
+        .spacer-tall {
+            height: 8rem !important;
+        }
     }
-    .huge {
+    @media (min-width: 1300px) {
+        .massive {
+            font-size: 15em;
+        }
+        .huge {
         font-size: 10rem;
+    }
     }
     .italic {
         font-style: italic;
@@ -130,16 +149,14 @@
         width: 5rem;
         height: 5rem;
         padding: 1rem;
-        margin-left: .5rem;
-        margin-right: .5rem;
+        margin: .5rem;
         cursor: none;
     }
     button.wider {
         width: auto;
         height: 5rem;
         padding: 1rem;
-        margin-left: .5rem;
-        margin-right: .5rem;
+        margin: .5rem;
         cursor: none;
     }
     .text-center {
@@ -196,6 +213,14 @@
     
 </style>
 <script>
+    const isTouchDevice = () => {  
+    return (('ontouchstart' in window) ||  
+        (navigator.maxTouchPoints > 0) ||  
+        (navigator.msMaxTouchPoints > 0));  
+    } 
+    if (isTouchDevice()) {
+        document.getElementById("cursor").style.display = "none";
+    }
     var cursor = document.getElementById("cursor");
     document.body.addEventListener("mousemove", function(e) {
         cursor.style.left = e.clientX + "px",
