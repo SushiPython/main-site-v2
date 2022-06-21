@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>SushiPython.US</title>
+    <title>SushiPython.US / About Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Sushi's portfolio website!"/>
+    <meta name="url" content="https://sushipython.us">
+    <meta property="og:title" content="SushiPython.US / About Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sushipython.us" />
+    <meta property="og:image" content="https://sushipython.us/logo.jpg" />
+    <meta property="og:description" content="Sushi's portfolio website!" />
 </head>
 <body>
     <div class='cursor' id="cursor"></div>
@@ -35,36 +47,36 @@
             <div class="column">
                 <h1 class="title huge animate__animated animate__backInLeft has-text-grey-light">I'm a</h1>
                 <div class="ml-6">
-                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ high schooler</h1>
-                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ mediocre web developer</h1>
-                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ music enthusiast</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ developer</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ music addict</h1>
                     <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ photographer</h1>
+                    <h1 class="title is-1 animate__animated animate__backInLeft has-text-white-ter">⬤ artist</h1>
                 </div>
                 <div class="spacer-tall"></div>
                 <div class="columns animate__animated animate__backInUp">
                     <div class="column text-center">
                         <h1 class="subtitle has-text-grey-light">Pages</h1>
-                        <button onclick="window.location.href=`/`" class="button is-light is-large shadow wider">
+                        <button aria-label="homepage" onclick="window.location.href=`/`" class="button is-light is-large shadow wider">
                             <b>Home</b>
                         </button>
-                        <button onclick="window.location.href=`/projects`" class="button is-light is-large shadow wider">
+                        <button aria-label="projects page" onclick="window.location.href=`/projects`" class="button is-light is-large shadow wider">
                             <b>Projects</b>
                         </button>
                     </div>
                     <div class="column text-center">
                         <h1 class="subtitle has-text-grey-light">Socials</h1>
-                        <button onclick="window.open(`https://github.com/SushiPython`)" class="button is-light is-large shadow bigger"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"></button>
-                        <button onclick="document.getElementById('modal').classList.add('is-active')" class="button is-light is-large shadow bigger"><img src="https://seeklogo.com/images/D/discord-black-logo-733DD6B9B0-seeklogo.com.png"></button>
-                        <button onclick="window.open(`https://www.youtube.com/channel/UCihmL67KFdeO6X3aoqpzuIw/videos?view=0&sort=p&flow=grid`)" class="button is-light is-large shadow bigger"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/YouTube_social_dark_circle_%282017%29.svg/300px-YouTube_social_dark_circle_%282017%29.svg.png"></button>
+                        <button aria-label="github" onclick="window.open(`https://github.com/SushiPython`)" class="button is-light is-large shadow bigger"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="github logo"></button>
+                        <button aria-label="discord" onclick="document.getElementById('modal').classList.add('is-active')" class="button is-light is-large shadow bigger"><img src="https://seeklogo.com/images/D/discord-black-logo-733DD6B9B0-seeklogo.com.png" alt="discord logo"></button>
+                        <button aria-label="youtube" onclick="window.open(`https://www.youtube.com/channel/UCihmL67KFdeO6X3aoqpzuIw/videos?view=0&sort=p&flow=grid`)" class="button is-light is-large shadow bigger"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/YouTube_social_dark_circle_%282017%29.svg/300px-YouTube_social_dark_circle_%282017%29.svg.png" alt="youtube logo"></button>
                     </div>
                 </div>
             </div>
             <div class="column disappear">
                 <figure class="image animate__animated animate__backInRight">
-                    <img class="shadow" src="https://github-readme-stats.vercel.app/api?username=SushiPython&show_icons=true&theme=radical" alt="SushiPython Logo">
+                    <img class="shadow" src="https://github-readme-stats.vercel.app/api?username=SushiPython&show_icons=true&theme=radical" alt="github stats">
                 </figure>
                 <figure class="image animate__animated animate__backInRight">
-                    <img class="shadow" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SushiPython&show_icons=true&theme=radical&langs_count=3&hide=css" alt="SushiPython Logo">
+                    <img class="shadow" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SushiPython&show_icons=true&theme=radical&langs_count=3&hide=css" alt="top languages">
                 </figure>
             </div>
         </div>
@@ -72,6 +84,12 @@
 </body>
 </html>
 <style>
+    @media (max-width: 1450px) {
+        img {
+            width: 500px !important;
+        }
+    }
+
     img {
         margin: 1em;
     }
@@ -206,16 +224,13 @@
         background: gray; /* Gecko Browsers */
     }
     /* if screen is less than 950 pixels wide, make the font size smaller */
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1450px) {
         .title {
             font-size: 3rem !important;
             margin-left: 3rem;
         }
         .subtitle {
             font-size: 1.2rem !important;
-        }
-        .disappear {
-            display: none !important;
         }
         .is-4 {
             font-size: 1.5rem !important;
@@ -228,6 +243,11 @@
         }
         section {
             left: -8rem !important;
+        }
+    }
+    @media (max-width: 950px) {
+        .disappear {
+            display: none !important;
         }
     }
 </style>
