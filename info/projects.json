@@ -1,39 +1,39 @@
-[   
+[
     {
-        "title": "VueTube",
-        "lang": "NUXT.js/Vue.js",
-        "desc": "A simple FOSS Youtube video streaming client aimed to recreate ALL features from their respective apps (and more)",
-        "url": "https://vuetube.app"
+      "title": "VueTube",
+      "lang": "NUXT.js/Vue.js",
+      "desc": "A simple FOSS Youtube video streaming client aimed to recreate ALL features from their respective apps (and more)",
+      "url": "https://vuetube.app"
     },
     {
-        "title": "SushiStats 🍣",
-        "lang": "HTML/Python",
-        "desc": "An elegant Hypixel Stats viewing website!",
-        "url": "https://ss.sushipython.us/"
+      "title": "SushiStats 🍣",
+      "lang": "HTML/Python",
+      "desc": "An elegant Hypixel Stats viewing website!",
+      "url": "https://ss.sushipython.us/"
     },
     {
-        "title": "BSMod",
-        "lang": "HTML/Python",
-        "desc": "All-in-one beat saber modding website!",
-        "url": "https://bsm.sushipython.us/"
+      "title": "BSMod",
+      "lang": "HTML/Python",
+      "desc": "All-in-one beat saber modding website!",
+      "url": "https://bsm.sushipython.us/"
     },
     {
-        "title": "Wordle Solver",
-        "lang": "Python/Rust",
-        "desc": "A simple open source wordle solver that operates through terminal and UI scripting",
-        "url": "https://github.com/SushiPython/wordle-solver"
+      "title": "Wordle Solver",
+      "lang": "Python/Rust",
+      "desc": "A simple open source wordle solver that operates through terminal and UI scripting",
+      "url": "https://github.com/SushiPython/wordle-solver"
     },
     {
-        "title": "AudioLink 🔗",
-        "lang": "HTML/Javascript",
-        "desc": "Listen to music with your friends, simply and easily!",
-        "url": "https://audio-link.sushipython.repl.co/"
+      "title": "AudioLink 🔗",
+      "lang": "HTML/Javascript",
+      "desc": "Listen to music with your friends, simply and easily!",
+      "url": "https://audio-link.sushipython.repl.co/"
     },
     {
-        "title": "WatchWithMe",
-        "lang": "HTML/Javascript",
-        "desc": "An app to watch youtube videos with your friends in real time",
-        "url": "https://github.com/SushiPython/WatchWithMe"
+      "title": "WatchWithMe",
+      "lang": "HTML/Javascript",
+      "desc": "An app to watch youtube videos with your friends in real time",
+      "url": "https://github.com/SushiPython/WatchWithMe"
     },
     {
       "title": "BlockStats",
