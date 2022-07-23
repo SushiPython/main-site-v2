@@ -42,5 +42,5 @@ fn rocket() -> _ {
         .mount("/", routes![index, about, projects])
         .register("/", catchers![not_found])
         .attach(Template::fairing())
-        .mount("/static", FileServer::from(relative!("static")))
+        .mount("/static", FileServer::from(relative!("../static")))
 }
